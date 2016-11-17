@@ -37,6 +37,6 @@ function iqTest(numbers) {
 }
 
 var test = "2 4 5 8 10"; //odd num is third;
-var test2 = "3 5 7 8"; // even num is second;
+var test2 = "3 5 7 8"; // even num is fourth;
 console.log(iqTest(test));
 console.log(iqTest(test2));
