@@ -35,29 +35,38 @@ Note for C
 The two arrays have the same size (> 0) given as parameter in function comp.*/
 
 function comp(array1, array2) {
-  var flag = false;
-  var i;
-    if (array1 === null || array2 === null) {
+    var newArr2 = [];
+    var flag = true;
+    var i;
+
+    if (array1 === null || array2 === null)
+    {
         return false;
     }
-    for (i = 0; i < array1.length; i++)
+    if (array1.length !== array2.length)
     {
-      array2[i] = Math.sqrt(array2[i]);
+        return false;
     }
-    for (i = 0; i < array1.length; i++)
-    {
-      for (var j = 0; j < array2.length; j++)
-      {
-        if (array1[i] === array2[j])
+    else {
+        for (i = 0; i < array1.length; i++)
         {
-          array2.splice(j, 1);
-          flag = true;
+            newArr2.push(Math.sqrt(array2[i]));
         }
-      }
-
-    }
-    if (array2.length !== 0) {
-      flag = false;
+        for (i = 0; i < array1.length; i++)
+        {
+          for (var j = 0; j < array2.length; j++)
+            {
+              if (array1[i] === newArr2[j])
+              {
+                  newArr2.splice(j, 1);
+                  flag = true;
+              }
+            }
+        }
+        if (newArr2.length !== 0)
+        {
+            flag = false;
+        }
     }
     return flag;
 }
@@ -69,3 +78,23 @@ console.log(comp(A, B)); // true
 var a = [121, 144, 19, 161, 19, 144, 19, 11];
 var b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361];
 console.log(comp(a, b)); // false;
+
+var a1 = [];
+var a2 = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19];
+console.log(comp(a1, a2));
+
+var b1 = [121, 144, 19, 161, 19, 144, 19, 11];
+var b2 = [];
+console.log(comp(b1, b2));
+
+var c1 = null;
+var c2 = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19];
+console.log(comp(c1, c2));
+
+var d1 = [121, 144, 19, 161, 19, 144, 19, 11];
+var d2 = null;
+console.log(comp(d1, d2));
+
+var f1 = [];
+var f2 = [];
+console.log(comp(f1,f2));
