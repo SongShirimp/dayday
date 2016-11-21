@@ -23,4 +23,4 @@ console.log(isMerge("codewars", "code", "wasr")); //f
 
 console.log(isMerge('codewars', 'codes', 'wars')); //f
 
-console.log(isMerge('codewars', 'cwdr', 'oeas')); //f
+console.log(isMerge('codewars', 'cwdr', 'oeas')); //f 
