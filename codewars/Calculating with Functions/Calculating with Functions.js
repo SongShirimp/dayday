@@ -14,7 +14,7 @@ function plus(x) {return function(n) {return n + x;};}
 function minus(x) {return function(n) {return n - x;};}
 function times(x) {return function(n) {return n * x;};}
 function dividedBy(x) {return function(n) {return n / x;};}
-
+ 
 console.log(seven(times(five()))); // must return 35
 console.log(four(plus(nine()))); // must return 13
 console.log(eight(minus(three()))); // must return 5
