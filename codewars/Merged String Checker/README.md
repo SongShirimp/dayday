@@ -14,9 +14,11 @@ part2:    o   e   a r s   = oears
 
 
 console.log(isMerge("codewars", "code", "wars")); //t
+
 console.log(isMerge("codewars", "cdw", "oears")); //t
 console.log(isMerge("codewars", "cdw", "ears")); //f
 
 console.log(isMerge("codewars", "code", "wasr")); //f
 console.log(isMerge('codewars', 'codes', 'wars')); //f
+
 console.log(isMerge('codewars', 'cwdr', 'oeas')); //f
