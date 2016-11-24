@@ -1,6 +1,6 @@
 function doneOrNot(board) {
     var res = "Finished!";
-    for (var i = 0; i < board.length; i++)
+    for (var i = 0; i < 9; i++)
     {
         var rowSum = 0,
             columnSum = 0,
