@@ -23,14 +23,14 @@ function doneOrNot(board) {
     {
         for (var m = 0; m < 9; m += 3) {
             for (var n = 0; n < 9; n += 3) {
-                var squreSum = 0;
+                var squareSum = 0;
                 for (var x = m; x < m + 3; x++) {
                     for (var y = n; y < n + 3; y++)
                     {
-                        squreSum += board[x][y]; // 3 x 3 block's sum is always 45.
+                        squareSum += board[x][y]; // 3 x 3 block's sum is always 45.
                     }
                 }
-                if (squreSum !== 45) { return res = "Try again!"; }
+                if (squareSum !== 45) { return res = "Try again!"; }
             }
         }
     }
