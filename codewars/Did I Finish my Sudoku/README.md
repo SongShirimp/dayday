@@ -5,6 +5,7 @@ Sudoku rules:
 Complete the Sudoku puzzle so that each and every row, column, and region contains the numbers one through nine only once.
 
 Rows:
+
                         [5, 3, 4, 6, 7, 8, 9, 1, 2]
 
 
@@ -13,6 +14,7 @@ There are 9 rows in a traditional Sudoku puzzle. Every row must contain the numb
 In the illustration the numbers 5, 3, 1, and 2 are the "givens". They can not be changed. The remaining numbers in black are the numbers that you fill in to complete the row.
 
 Columns:
+
                         [5]
                         [6]
                         [1]
@@ -29,6 +31,7 @@ There are 9 columns in a traditional Sudoku puzzle. Like the Sudoku rule for row
 In the illustration the numbers 7, 2, and 6 are the "givens". They can not be changed. You fill in the remaining numbers as shown in black to complete the column.
 
 Regions :
+
                         [5, 3, 4]
                         [6, 7, 2]
                         [1, 9, 8]
@@ -42,6 +45,7 @@ Like the Sudoku requirements for rows and columns, every region must also contai
 In the illustration the numbers 1, 2, and 8 are the "givens". They can not be changed. Fill in the remaining numbers as shown in black to complete the region.
 
 Valid board example:
+
                         [5, 3, 4, 6, 7, 8, 9, 1, 2]
                         [6, 7, 2, 1, 9, 5, 3, 4, 8]
                         [1, 9, 8, 3, 4, 2, 5, 6, 7]
