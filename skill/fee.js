@@ -1,3 +1,5 @@
+//Lookup array
+
 function fee(nAge) {
   var nFee = 1000;
 
