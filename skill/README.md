@@ -1,1 +1,1 @@
-for get advanced programming skills.
+for getting advanced programming skills.
